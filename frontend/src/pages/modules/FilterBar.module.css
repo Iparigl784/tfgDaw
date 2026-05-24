@@ -1,0 +1,16 @@
+.bar {
+  padding: var(--space-md);
+
+  & .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-md);
+    align-items: end;
+  }
+
+  & .actions {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: flex-end;
+  }
+}

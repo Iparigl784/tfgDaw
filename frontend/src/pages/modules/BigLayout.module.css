@@ -1,0 +1,17 @@
+.shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  position: relative;
+
+  & .content {
+    width: 100%;
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md);
+
+    @media (max-width: 600px) {
+      padding: var(--space-md) var(--space-sm);
+    }
+  }
+}
