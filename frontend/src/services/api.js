@@ -1,6 +1,4 @@
 // Mapeo de endpoints de la API REST.
-// Generado a partir de meetng-app/routes/api.php — NO inventar rutas.
-// Solo exporta rutas y nombres de endpoints. El consumo se hace con useFetch / apiRequest.
 
 export const API_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000/api').replace(
   /\/$/,
@@ -55,9 +53,6 @@ export const endpoints = {
   destinatarioDestroy: (encuestaId, destinatarioId) =>
     `/encuestas/${encuestaId}/destinatarios/${destinatarioId}`,
 
-  // GET /api/invitaciones — devuelve encuestas + reuniones donde el usuario es
-  // destinatario/asistente. Cada item: { tipo, id, titulo, recurso_id, estado,
-  // fecha, usuario, created_at }.
   invitaciones: '/invitaciones',
 };
 
